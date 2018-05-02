@@ -1,0 +1,31 @@
+What does the sight do?
+a place to get information about stranger things. and show off cool effects.
+
+Characters
+- main image
+- images carosoul
+- actor or actress name
+- stats: age, hair color, gender
+- description of character and traits, role.
+
+Other Characters-
+
+Creatures
+- main image
+- images
+- actor or actress name
+- stats: age, hair color, gender
+- description of character and traits
+
+Episodes
+- title
+- ligth description
+- session and episode
+
+Image Gallery
+- Gallery of images
+
+Locations
+- map would be cool overlaying the city and the tunned system and landmarks
+- layer system
+
