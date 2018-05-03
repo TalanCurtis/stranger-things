@@ -50,44 +50,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* Particals */}
-        <div id="particle-container">
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-          <div className="particle"></div>
-        </div>
 
-        <Nav/> {/* {routes} */}
 
-        {/* BackGround Masking */}
-        <div className="wrapper full-size">
-          {/* <!-- This div handle the background color --> */}
-          <div className="mask-bg-color full-size"></div>
-          {/* <!-- This div  wrap all other elements with blend-mode multiply apply --> */}
-          <div className="blend-multiply full-size">
-            {/* <!-- This div handle the background element (could be an image, a video or in that case a gif) --> */}
-            <div className="animated-bg full-size"></div>
-            {/* <!-- This div wrap the masked element with blend-mode screen apply and background-color set as #ffffff = white background --> */}
-            <div className="blend-screen element-mask full-size">
-              {/* <!-- This span display the masked element--> */}
-              <span id="circle" className="circle-follow"></span>
-            </div>
+        {routes}
 
-          </div>
-        </div>
+
 
       </div>
     );
