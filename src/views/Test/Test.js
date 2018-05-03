@@ -5,7 +5,8 @@ class Test extends Component{
     constructor(){
         super();
         this.state={
-            isUpsideDown:false
+            isUpsideDown:false,
+            isMenuOpen:false
         }
     }
 
@@ -20,29 +21,32 @@ class Test extends Component{
         var tl = new TimelineMax();
 
             tl
-            .to(".upsideDownWorld", 1, {
+            .to(".regularWorld", 1, {
             webkitMaskPosition:'100%',
+            // Stepped Ease is how many frames
             ease: SteppedEase.config(22),
             repeat:0
             })
 
+            tl.addPause(.5)
         // TweenLite.from('.upsideDownWorld', 1, { webkitMaskPosition:'0px'})
         // TweenLite.to('.upsideDownWorld', 1, { webkitMaskPosition:'100%'})
 
         
         setTimeout(() => {
-            TweenLite.set('.upsideDownWorld', { webkitMaskPosition:'0px'})
+            tl.reverse();
+            // TweenLite.set('.regularWorld', { webkitMaskPosition:'0px'})
         }, 2000);
         this.setState({isUpsideDown: !this.state.isUpsideDown})
     }
     render(){
         return(
             <div className="Test">
-                <div className='regularWorld'>
-                    
-                </div>
                 <div className='upsideDownWorld'>
 
+                </div>
+                <div className='regularWorld'>
+                    
                 </div>
                 <button onClick={()=>this.changeWorld()} style={{ position:'fixed'} }>Switch</button>
             </div>

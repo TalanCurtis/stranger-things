@@ -12,21 +12,41 @@ display: flex;
 // 	background-size: 0;
 // }
 .regularWorld{
+    // background-color: #fff;
+    // background-image: url('/images/forest_normal.jpg');
+    // height: 100vh;
+    // width: 100vw;
+    // position: absolute;
+
     background-color: #fff;
     background-image: url('/images/forest_normal.jpg');
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-}
-.upsideDownWorld {
-    background-color: #fff;
-    background-image: url('/images/forest_upsideDown.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     mask-image: url('/images/sprite.png');
     mask-repeat: no-repeat;
     mask-size: calc(100% * 23) 100%;
-    // mask-position: calc(100% / 23 );
     position: absolute;
-    // mask-position: -100px 0px;
+}
+.upsideDownWorld {
+
+    background-color: #fff;
+    background-image: url('/images/forest_upsideDown.jpg');
+    background-position: center;
+    // background-image: url('/images/forest_normal.jpg');
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+
+
+    // background-color: #fff;
+    // background-image: url('/images/forest_upsideDown.jpg');
+    // height: 100vh;
+    // width: 100vw;
+    // mask-image: url('/images/sprite.png');
+    // mask-repeat: no-repeat;
+    // mask-size: calc(100% * 23) 100%;
+    // position: absolute;
+
 }
