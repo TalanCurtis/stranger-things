@@ -29,3 +29,10 @@ Locations
 - map would be cool overlaying the city and the tunned system and landmarks
 - layer system
 
+
+Art Direction
+- light follows cursor mobile light goes to tap Locations
+- side menu takes over whole screen with upsidedown fog and particals and transitions world.
+- home button in center
+- audio muffle effect while in menu is cool.
+
