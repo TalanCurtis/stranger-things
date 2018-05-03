@@ -3,7 +3,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center; 
-
+    overflow: hidden;
 
     font-size: 14px;
 }
@@ -111,16 +111,19 @@ h6 {
 // 	background-color: #fff;
 // }
 
+// Mouse follow
 .circle-follow {
 	position :absolute;
 	overflow : hidden;
-	background-color: #ff000042;
-	width :320px; 
-	height: 320px;
-    top:calc( 50% - 160px); 
-    left:calc( 50% - 160px); 
-    -webkit-border-radius: 160px; 
-    border-radius: 160px;  
+    background-color: #a0a8d3;
+    box-shadow: 0px 0px 10px #a0a8d3;
+    mix-blend-mode: screen;
+	width :32px; 
+	height: 32px;
+    top:calc( 50% - 16px); 
+    left:calc( 50% - 16px); 
+    -webkit-border-radius: 16px; 
+    border-radius: 16px;  
     -webkit-transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
     transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
     opacity : 0; 
@@ -143,3 +146,33 @@ h6 {
 _:-ms-fullscreen, :root .letter-mask {background-color: transparent; }
 _:-ms-fullscreen, :root .animated-bg {opacity: 0.2;}
 _:-ms-fullscreen, :root .circle-follow {background-color:#ffffff; opacity: 0.2; }
+
+
+
+
+//////// Particles
+// .particle {
+//     position: absolute;
+//     border-radius: 50%;
+// }
+
+// @for $i from 1 through 30 {
+//     @keyframes particle-animation-#{$i} {
+//         100% {
+//             transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+//         }
+//     }
+    
+//     .particle:nth-child(#{$i}){
+//         animation: particle-animation-#{$i} 60s infinite;
+//         $size: random(100) + 100 + px;
+//         opacity: random(100)/100;
+//         height: $size;
+//         width: $size;
+//         animation-delay: -$i * .2s;
+//         transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+//         // background: hsl(random(360), 70%, 50%);
+//         background: lightskyblue;
+//         box-shadow: 5px 10px 5px #0863ca;
+//     }
+// }
