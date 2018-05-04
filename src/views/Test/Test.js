@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TweenLite, TimelineLite, TweenMax, TimelineMax, SteppedEase } from 'gsap';
+import {TimelineMax, SteppedEase } from 'gsap';
 
 class Test extends Component{
     constructor(){
@@ -21,24 +21,26 @@ class Test extends Component{
         var tl = new TimelineMax();
 
             tl
-            .to(".regularWorld", 1, {
+            .to(".regularWorld", 3, {
             webkitMaskPosition:'100%',
             // Stepped Ease is how many frames
-            ease: SteppedEase.config(22),
+            ease: SteppedEase.config(82),
             repeat:0
             })
 
-            tl.addPause(.5)
+            tl.addPause(2.9)
         // TweenLite.from('.upsideDownWorld', 1, { webkitMaskPosition:'0px'})
         // TweenLite.to('.upsideDownWorld', 1, { webkitMaskPosition:'100%'})
 
         
-        setTimeout(() => {
-            tl.reverse();
-            // TweenLite.set('.regularWorld', { webkitMaskPosition:'0px'})
-        }, 2000);
+        // setTimeout(() => {
+        //     // tl.reverse();
+        //     // TweenLite.set('.regularWorld', { webkitMaskPosition:'0px'})
+        // }, 2000);
         this.setState({isUpsideDown: !this.state.isUpsideDown})
     }
+
+
     render(){
         return(
             <div className="Test">
