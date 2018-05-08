@@ -7,7 +7,7 @@ import Test from './views/Test/Test';
 
 export default (
     <Switch>
-        <Route exact path='/' component={Test} />
+        <Route exact path='/' component={Page1} />
         <Route path='/Page2' component={Page2} />
     </Switch>
 )

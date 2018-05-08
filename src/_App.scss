@@ -1,0 +1,175 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    .bg-image-regularWorld {
+        background-image: url('/images/forest_normal.jpg');
+        background-position-x: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        mask-image: url('/images/vineSeq.png');
+        mask-repeat: no-repeat;
+        mask-size: calc(100% * 83) 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .bg-image-upsideDownWorld {
+        background-image: url('/images/forest_upsideDown.jpg');
+        background-position-x: center;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+
+/////////////////
+// .shimmer {
+//     display: inline-block;
+//     color:white;
+    
+//     background: #acacac -webkit-gradient(linear, 100% 0, 0 0, from(#ff0000), color-stop(0.5, #ffffff), to(#acacac));
+    
+//     background-position: -4rem top; /*50px*/
+//     background-repeat: no-repeat;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     -webkit-animation-name: shimmer;
+//     -webkit-animation-duration: 2.2s;
+//     -webkit-animation-iteration-count: infinite;
+//     -webkit-background-size: 4rem 100%; /*50px*/
+    
+//   }
+  
+//   @-webkit-keyframes shimmer {
+//       0% {
+//           background-position: -4rem top; /*50px*/
+//       }
+  
+//       70% {
+//           background-position: 12.5rem top; /*200px*/
+//       }
+  
+//       100% {
+//           background-position: 12.5rem top; /*200px*/
+//       }
+//   }
+
+//   .glow{
+//       stroke: red;
+//       stroke-width: 1.75;
+//       stroke-opacity: 1;
+//       fill:transparent;
+//     //   filter: blur(20)
+//     //   box-shadow: 10px 10px 5px purple ;
+//     animation-name: glow;
+//     animation-duration: 2s;
+//     animation-iteration-count: 1;
+
+//   }
+
+//   @-webkit-keyframes glow {
+//     0% {
+//         stroke-opacity: 0;
+//     }
+
+
+
+//     100% {
+//         stroke-opacity: 1;
+//     }
+// }
+
+// .asImage{
+//     fill: red;
+//     opacity: .5;
+//     stroke: purple;
+//     stroke-width: 10;
+//     #E{
+//         fill: green;
+//         stroke-width: 20;
+//     }
+// }
+// .umbrella{
+//     fill:red;
+//     opacity: 1;
+//     animation-name: fade;
+//     animation-duration: 2s;
+//     animation-iteration-count: 1;
+// }
+
+// @-webkit-keyframes fade {
+//     0% {
+//         opacity: 0;
+//     }
+
+
+
+//     100% {
+//         opacity: 1;
+//     }
+// }
+.LogoContainer{
+    width: 300px;
+    height: 150px;
+}
+.Logo{
+    fill: transparent;
+    // stroke: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(#e66465, #9198e5);
+    stroke: blue;
+    stroke-width: 2px;
+    // background: green;
+    // mask: linear-gradient(transparent, #9198e5);
+    // filter: blur(1px);
+    // animation: glow 1s timing-function delay iteration-count direction fill-mode;
+    // stroke-dasharray: 1000;
+    // stroke-dashoffset: 1000;
+    // animation: dash 5s linear;
+    // box-shadow:
+    // inset 0 0 50px #fff,
+    // inset 20px 0 80px #f0f,
+    // inset -20px 0 80px #0ff,
+    // inset 20px 0 300px #f0f,
+    // inset -20px 0 300px #0ff,
+    // 0 0 50px #fff,
+    // -10px 0 80px #f0f,
+    // 10px 0 80px #0ff;
+    // filter: drop-shadow(0px 0px 3px rgb(255, 0, 0));
+}
+  
+//   @keyframes dash {
+//     to {
+//       stroke-dashoffset: 0;
+//     }
+//   }
+
+.MyColor{
+    // background-image: url('/images/Noise.jpg');
+    // background-color: linear-gradient(90deg, red, #9198e5);
+    // background-blend-mode: multiply;
+    // background-image: url('/images/Noise.jpg');
+    // background-size: 100% 100%;
+    background-color: rgb(200, 0, 0);
+    background-blend-mode: multiply;
+    mask-image: url('/images/Logo.svg');
+}
+.softMask{
+    height: 150px;
+    width: 300px;
+    // background-color: rgb(255, 0, 0);
+    // mask-image: url('/images/LogoSoftMask.png')
+}
+.anothermask{
+    // height: 150px;
+    // width:500px;
+    // background-color: teal;
+    // background-image: url('/images/Noise.jpg');
+    // mask: url('/images/Logo.svg');
+    // background-size: 100% 100%;
+}
