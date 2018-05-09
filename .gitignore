@@ -23,4 +23,9 @@ yarn-error.log*
 .env
 package-lock.json
 src/styles/main.css
+<<<<<<< HEAD
 src/images/
+=======
+src/images/ref
+src/images/artFiles/
+>>>>>>> 4c7f9c88905497ec990d74ef6a061c2b6b148bec
