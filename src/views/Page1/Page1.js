@@ -6,6 +6,7 @@ class Page1 extends Component{
         return(
             <div className="Page1">
                 Page1 View
+                <button onClick={()=>console.log('clicked')}>push me</button>
             </div>
         )
     }
