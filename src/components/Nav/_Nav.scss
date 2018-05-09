@@ -13,3 +13,23 @@
         visibility: hidden;
     }
 }
+.SVG_Hamburger{
+    fill: transparent;
+    stroke: grey;
+    stroke-width: 2px;
+    padding: 10px;
+
+    transition: stroke 1s ease;
+}
+.SVG_Hamburger:hover{
+    
+    stroke: red;
+    // animation-name: glow;
+    // animation-duration: 1s;
+    // animation-iteration-count: 1;
+}
+
+// @keyframes glow{
+//     0% {stroke: gray}
+//     100% {stroke: red}
+// }
